@@ -33,6 +33,7 @@ def load_file(file_name='data.json'):
     with open(file_name, encoding = "utf-8") as f:
         data = json.load(f)
     return data
+    
 if __name__ == "__main__":
     file_name = 'data.json'
     file_folder = 'h2h'
