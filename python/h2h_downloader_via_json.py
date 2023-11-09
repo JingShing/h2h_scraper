@@ -2,9 +2,6 @@ import json
 import os
 import requests
 
-import os
-import requests
-
 def download_images(image_dict, path=''):
     for folder_path, image_urls in image_dict.items():
         folder_path = os.path.join(path, folder_path)
