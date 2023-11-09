@@ -33,7 +33,10 @@ def load_file(file_name='data.json'):
     with open(file_name, encoding = "utf-8") as f:
         data = json.load(f)
     return data
-data = load_file()
-print(type(data))
-print(data)
-download_images(data, 'h2h')
+if __name__ == "__main__":
+    file_name = 'data.json'
+    file_folder = 'h2h'
+    data = load_file(file_name)
+    print(type(data))
+    print(data)
+    download_images(data, file_folder)
